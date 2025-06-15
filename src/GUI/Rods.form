@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="GUI.Rods">
+  <grid id="27dc6" binding="panel5" layout-manager="GridLayoutManager" row-count="5" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="831" height="546"/>
+    </constraints>
+    <properties>
+      <background color="-204638"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="fa14" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="4" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-204638"/>
+          <foreground color="-4224"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <tabbedpane id="bb5d7" binding="tabbedPane1" default-binding="true">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="200" height="200"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-4224"/>
+              <font name="Cascadia Code" size="14" style="1"/>
+              <foreground color="-16777216"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <grid id="5c0d7" binding="floatColumns" layout-manager="CardLayout" hgap="0" vgap="0">
+                <constraints>
+                  <tabbedpane title="Spławikowe"/>
+                </constraints>
+                <properties>
+                  <background color="-4224"/>
+                  <foreground color="-16777216"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="383f1" class="javax.swing.JTable" binding="floattable">
+                    <constraints>
+                      <card name="Card1"/>
+                    </constraints>
+                    <properties>
+                      <background color="-204638"/>
+                      <fillsViewportHeight value="true"/>
+                      <font name="Cascadia Code" size="14" style="1"/>
+                      <foreground color="-16777216"/>
+                      <gridColor color="-16777216"/>
+                      <selectionBackground color="-4224"/>
+                      <selectionForeground color="-16777216"/>
+                      <showVerticalLines value="true"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="ae072" binding="spiningColumns" layout-manager="CardLayout" hgap="0" vgap="0">
+                <constraints>
+                  <tabbedpane title="Spiningowe"/>
+                </constraints>
+                <properties>
+                  <background color="-4224"/>
+                  <foreground color="-16777216"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="f616c" class="javax.swing.JTable" binding="spiningtable">
+                    <constraints>
+                      <card name="Card1"/>
+                    </constraints>
+                    <properties>
+                      <background color="-204638"/>
+                      <fillsViewportHeight value="true"/>
+                      <font name="Cascadia Code" size="14" style="1"/>
+                      <foreground color="-16777216"/>
+                      <gridColor color="-16777216"/>
+                      <selectionBackground color="-4224"/>
+                      <selectionForeground color="-16777216"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="4aeb3" binding="fedderColumns" layout-manager="CardLayout" hgap="0" vgap="0">
+                <constraints>
+                  <tabbedpane title="Gruntowe"/>
+                </constraints>
+                <properties>
+                  <background color="-4224"/>
+                  <foreground color="-16777216"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="8f9c2" class="javax.swing.JTable" binding="feddertable">
+                    <constraints>
+                      <card name="Card1"/>
+                    </constraints>
+                    <properties>
+                      <background color="-204638"/>
+                      <fillsViewportHeight value="true"/>
+                      <font name="Cascadia Code" size="14" style="1"/>
+                      <foreground color="-16777216"/>
+                      <gridColor color="-16777216"/>
+                      <selectionBackground color="-4224"/>
+                      <selectionForeground color="-16777216"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </tabbedpane>
+        </children>
+      </grid>
+      <grid id="5a060" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="4" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-204638"/>
+          <foreground color="-204638"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="79dd1" class="javax.swing.JButton" binding="powrótButton" default-binding="true">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-4224"/>
+              <foreground color="-16777216"/>
+              <text value="Powrót"/>
+            </properties>
+          </component>
+          <component id="bab7" class="javax.swing.JButton" binding="rezerwujButton" default-binding="true">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-4224"/>
+              <foreground color="-16777216"/>
+              <text value="Rezerwuj"/>
+            </properties>
+          </component>
+          <component id="2cb3" class="javax.swing.JButton" binding="wyjdźButton" default-binding="true">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-4224"/>
+              <foreground color="-16777216"/>
+              <text value="Wyjdź"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="68753" layout-manager="CardLayout" hgap="0" vgap="0">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="4" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-4224"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="69a9e" layout-manager="GridLayoutManager" row-count="3" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="4" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-4224"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="26e28" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="5" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-16777216"/>
+              <font name="Algerian" size="20"/>
+              <foreground color="-16777216"/>
+              <text value="Kompleks Łowisk Komercyjnych Złota Rybka"/>
+            </properties>
+          </component>
+          <component id="6d5a3" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="3" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <icon value="Figures/logo200.png"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="51768" class="javax.swing.JLabel" binding="zalogowano">
+            <constraints>
+              <grid row="1" column="1" row-span="2" col-span="4" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Cascadia Code" size="14" style="1"/>
+              <foreground color="-16777216"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="6da94" class="javax.swing.JButton" binding="szczegółyKontaButton" default-binding="true">
+            <constraints>
+              <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-4224"/>
+              <borderPainted value="false"/>
+              <font name="Cascadia Code" size="14" style="1"/>
+              <foreground color="-16777216"/>
+              <icon value="Figures/icons8-account-48.png"/>
+              <text value="Szczegóły konta"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <component id="a9631" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Cascadia Code" size="14" style="1"/>
+          <foreground color="-16777216"/>
+          <text value="Początek rezerwacji"/>
+        </properties>
+      </component>
+      <component id="8d364" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Cascadia Code" size="14" style="1"/>
+          <foreground color="-16777216"/>
+          <text value="Koniec rezerwacji"/>
+        </properties>
+      </component>
+      <component id="37b37" class="javax.swing.JSpinner" binding="endDatePicker">
+        <constraints>
+          <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="cfd4" class="javax.swing.JSpinner" binding="startDatePicker">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+    </children>
+  </grid>
+</form>
