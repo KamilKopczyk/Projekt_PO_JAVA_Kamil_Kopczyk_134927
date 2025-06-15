@@ -26,6 +26,9 @@ public class Register extends JFrame {
         int width = 1980, height = 1080;
         this.setSize(width, height);
 
+        String password = new String(Hasło.getPassword());
+        String confirmPassword = new String(Hasło2.getPassword());
+
         zarejestrujButton1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -37,8 +40,13 @@ public class Register extends JFrame {
                 String nazwisko = Nazwisko.getText();
                 String telefonText = telefon.getText();
 
+                if (imię.isEmpty() || nazwisko.isEmpty() || login.isEmpty() || password.isEmpty() || confirmPassword.isEmpty() || telefonText.isEmpty() || email.isEmpty()) {
+                    JOptionPane.showMessageDialog(null, "Wszystkie pola muszą być wypełnione!", "Błąd", JOptionPane.WARNING_MESSAGE);
+                    return;
+                }
+
                 if (!password.equals(confirmPassword)) {
-                    JOptionPane.showMessageDialog(null, "Hasła nie są identyczne!", "Błąd", JOptionPane.ERROR_MESSAGE);
+                    JOptionPane.showMessageDialog(null, "Hasła nie są takie same. Spróbuj ponownie.");
                     return;
                 }
 

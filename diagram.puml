@@ -1,0 +1,150 @@
+@startuml
+
+' Define packages for better organization
+package "Services.Lakes" {
+    class Lakes {
+        - int id_lowiska
+        - double powierzchnia
+        - double max_glebokosc
+        - int liczba_stanowisk
+        - String rodzaj_ryb
+        - Enum rodzaj_lowiska
+        - double cena_wstepu
+        - String godziny_otwarcia
+        + getId_lowiska()
+        + setId_lowiska(int)
+        + getPowierzchnia()
+        + setPowierzchnia(double)
+        + getMax_glebokosc()
+        + setMax_glebokosc(double)
+        + getLiczba_stanowisk()
+        + setLiczba_stanowisk(int)
+        + getRodzaj_ryb()
+        + setRodzaj_ryb(String)
+        + getRodzaj_lowiska()
+        + setRodzaj_lowiska(Enum)
+        + getCena_wstepu()
+        + setCena_wstepu(double)
+        + getGodziny_otwarcia()
+        + setGodziny_otwarcia(String)
+    }
+
+    class FloatLakes {
+        - Boolean czy_mozna_lowic_z_lodki
+        - Boolean czy_haczyki_z_zadziorami
+        + getCzy_mozna_lowic_z_lodki()
+        + setCzy_mozna_lowic_z_lodki(Boolean)
+        + getCzy_haczyki_z_zadziorami()
+        + setCzy_haczyki_z_zadziorami(Boolean)
+    }
+
+    class FedderLakes {
+        - boolean czy_mozna_necic_lodka
+        - String zakazane_smaki_zanety
+        + isCzy_mozna_necic_lodka()
+        + setCzy_mozna_necic_lodka(boolean)
+        + getZakazane_smaki_zanety()
+        + setZakazane_smaki_zanety(String)
+    }
+
+    Lakes <|-- FloatLakes
+    Lakes <|-- FedderLakes
+}
+
+package "Services.Houses" {
+    class Houses {
+        - int id_domu
+        - int ilu_osobowy
+        - int przy_jakim_lowisku
+        - double cena_wynajmu
+        + getId_domu()
+        + setId_domu(int)
+        + getIlu_osobowy()
+        + setIlu_osobowy(int)
+        + getPrzy_jakim_lowisku()
+        + setPrzy_jakim_lowisku(int)
+        + getCena_wynajmu()
+        + setCena_wynajmu(double)
+    }
+}
+
+package "Dao" {
+    class HousesDao {
+        + getAllHouses(): List<Houses>
+    }
+
+    class FloatLakesDao {
+        + getAllFloatLakes(): List<FloatLakes>
+    }
+
+    class FedderLakesDao {
+        + getAllFedderLakes(): List<FedderLakes>
+    }
+
+    class ReservationDao {
+        + addReservation(int, int, String, String): boolean
+        + getReservationHistoryByUserId(int): List<String[]>
+        + getCurrentlyReservedLakes(): List<Integer>
+        + addRodReservation(int, int, String, String): boolean
+        + getCurrentlyReservedRods(String, String): List<Integer>
+        + addHouseReservation(int, int, String, String): boolean
+        + getCurrentlyReservedHouses(String, String): List<Integer>
+    }
+}
+
+package "GUI" {
+    class AfterLogin {
+        - JPanel panel3
+        - JButton lake
+        - JButton rod
+        - JButton house
+        - JButton powrótButton
+        - JButton wyjdźButton
+        - JLabel zalogowano
+        - JButton szczegółyKontaButton
+        + setLoginText(String)
+    }
+
+    class Lake {
+        - JTable floattable
+        - JTable spiningtable
+        - JTable feddertable
+        + loadFloatLakesData()
+        + loadSpiningLakesData()
+        + loadFedderLakesData()
+        + setLoginText(String)
+    }
+
+    class Rods {
+        - JTable floattable
+        - JTable spiningtable
+        - JTable feddertable
+        + loadFloatRodsData()
+        + loadSpiningRodsData()
+        + loadFedderRodsData()
+        + setLoginText(String)
+    }
+
+    class ReservationHistory {
+        - JTable reservationstable
+        + loadReservationHistory()
+        + setLoginText(String)
+    }
+}
+
+' Define relationships
+FloatLakesDao --> FloatLakes
+FedderLakesDao --> FedderLakes
+HousesDao --> Houses
+ReservationDao --> Houses
+ReservationDao --> FloatLakes
+ReservationDao --> FedderLakes
+
+Lake --> FloatLakes
+Lake --> FedderLakes
+Lake --> ReservationDao
+
+Rods --> ReservationDao
+ReservationHistory --> ReservationDao
+
+@enduml
