@@ -1,0 +1,38 @@
+\babel@toc {polish}{}\relax 
+\contentsline {chapter}{\numberline {1}Streszczenie}{7}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Streszczenie w języku polskim}{7}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Summary in English}{7}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Opis założeń projektu}{8}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Cele projektu}{8}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Wymagania funkcjonalne}{8}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Wymagania niefunkcjonalne}{8}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Opis struktury}{9}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Opis struktury projektu}{9}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Wykorzystane technologie i narzędzia}{9}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Hierarchia i architektura klas}{9}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Diagram klas UML}{11}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Zarządzanie danymi i baza danych lowisko}{12}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Wymagania systemowe i narzędzia do uruchomienia projektu}{13}{section.3.6}%
+\contentsline {chapter}{\numberline {4}Harmonogram realizacji projektu.}{14}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Harmonogram realizacji projektu. - Diagram Gantta}{14}{section.4.1}%
+\contentsline {section}{\numberline {4.2}System kontroli wersji i repozytorium}{14}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Prezentacja warstwy użytkowej projektu}{16}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Wprowadzenie}{16}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Ekran logowania i rejestracji}{16}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Ekran rejestracji}{17}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Ekran po zalogowaniu}{18}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Ekran bez logowania}{19}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Ekran rezerwacji łowisk}{20}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Ekran rezerwacji wędek}{21}{section.5.7}%
+\contentsline {section}{\numberline {5.8}Ekran rezerwacji domków}{22}{section.5.8}%
+\contentsline {section}{\numberline {5.9}Ekran historia rezerwacji}{23}{section.5.9}%
+\contentsline {chapter}{\numberline {6}Testowanie okienek błędów i innych elementów GUI}{24}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Wprowadzenie}{24}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Okienka ostrzegawcze ekranu logowania}{24}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Okienka ostrzegawcze ekranu rejestracjii}{26}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Okienka ostrzegawcze ekranu rezerwacji}{29}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Okienka ostrzegawcze ekranu rezerwacji i histori bez logowania}{31}{section.6.5}%
+\contentsline {chapter}{\numberline {7}Podsumowanie}{33}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Wnioski}{33}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Przyszłe kierunki rozwoju}{33}{section.7.2}%
+\contentsline {section}{\textbf {Spis rysunków}}{34}{section.7.2}%
